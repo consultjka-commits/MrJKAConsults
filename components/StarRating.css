@@ -1,0 +1,36 @@
+.star-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 2rem 0;
+}
+
+.star-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.star-btn:hover {
+    transform: scale(1.15) translateY(-2px);
+}
+
+.star {
+    font-size: 3.5rem;
+    color: rgba(160, 170, 191, 0.3);
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: block;
+}
+
+.star-btn.active .star {
+    color: var(--color-gold);
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    transform: scale(1.1);
+}
+
+.star-btn.rated .star {
+    color: var(--color-gold);
+}
